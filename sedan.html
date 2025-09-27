@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Sedans</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remixicon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+     <style>
+    header {
+      background: url("header-bg.png") no-repeat center center/cover;
+      height: 100px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+    }
+    .scroll__down {
+      font-size: 2rem;
+      color: white;
+      background: rgba(245, 229, 7, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+      text-decoration: none;
+      position: absolute;
+      bottom: 20px;
+    }
+    .deals__rating i {
+      color: #FFD700;
+    }
+    .select__btn {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .select__btn:hover {
+      background-color: #e6c200;
+    }
+    .deals__card__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .range__card img {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    h2.section__title {
+      margin: 2rem 0 1rem;
+      text-align: center;
+      color: #222;
+    }
+  </style>
+
+  <!-- Header -->
+  <header>
+    <h1 class="section__title">🚗 Electric Sedans</h1>
+  </header>
+
+  <!-- Sedans Section -->
+  <section class="range__grid">
+
+    <!-- Mercedes AMG GT-->
+    <div class="range__card">
+      <img src="assets/sedan-1.jpg" alt="Tesla Model 3" />
+      <div class="range__details">
+        <h4> Mercedes AMG GT</h4>
+        <p>₹3,500/day</p>
+        <button class="select__btn">Rent Now</button>
+        <div class="deals__rating">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-line"></i></span>
+          <span>(550)</span>
+        </div>
+        <div class="deals__card__grid">
+          <div><span><i class="ri-group-line"></i></span> 4 People</div>
+          <div><span><i class="ri-steering-2-line"></i></span> Autopilot</div>
+          <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+          <div><span><i class="ri-car-line"></i></span> Electric</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BMW M4 Compition-->
+    <div class="range__card">
+      <img src="assets/sedan-2.jpg" alt="BMW i4" />
+      <div class="range__details">
+        <h4> BMW M4 Compition</h4>
+        <p>₹4,000/day</p>
+        <button class="select__btn">Rent Now</button>
+        <div class="deals__rating">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-line"></i></span>
+          <span><i class="ri-star-line"></i></span>
+          <span>(430)</span>
+        </div>
+        <div class="deals__card__grid">
+          <div><span><i class="ri-group-line"></i></span> 4 People</div>
+          <div><span><i class="ri-steering-2-line"></i></span> Autopilot</div>
+          <div><span><i class="ri-speed-up-line"></i></span> 380km</div>
+          <div><span><i class="ri-car-line"></i></span> Petrol</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BMW I4-->
+    <div class="range__card">
+      <img src="assets/sedan-3.jpg" alt="Hyundai Ioniq 6" />
+      <div class="range__details">
+        <h4>BMW I4</h4>
+        <p>₹3,700/day</p>
+        <button class="select__btn">Rent Now</button>
+        <div class="deals__rating">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-line"></i></span>
+          <span>(500)</span>
+        </div>
+        <div class="deals__card__grid">
+          <div><span><i class="ri-group-line"></i></span> 4 People</div>
+          <div><span><i class="ri-steering-2-line"></i></span> Autopilot</div>
+          <div><span><i class="ri-speed-up-line"></i></span> 410km</div>
+          <div><span><i class="ri-car-line"></i></span>Petrol</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vans</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Remixicon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    header {
+      background: url("header-bg.png") no-repeat center center/cover;
+      height: 100px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+    }
+    .scroll__down {
+      font-size: 2rem;
+      color: white;
+      background: rgba(245, 229, 7, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+      text-decoration: none;
+      position: absolute;
+      bottom: 20px;
+    }
+    .deals__rating i {
+      color: #FFD700;
+    }
+    .select__btn {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .select__btn:hover {
+      background-color: #e6c200;
+    }
+    .deals__card__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .range__card img {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    h2.section__title {
+      margin: 2rem 0 1rem;
+      text-align: center;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#about" class="scroll__down">
+      <i class="ri-arrow-down-line"></i>
+    </a>
+  </header>
+
+  <!-- Vans Only -->
+  <h2 class="section__title">🚐 Vans</h2>
+  <section class="range__grid">
+    
+    <!-- Mercedes eVito -->
+    <div class="range__card">
+      <img src="assets/van-1.jpg" alt="Mercedes eVito" />
+      <div class="range__details">
+        <h4>MERCEDES eVITO</h4>
+        <p>₹4,500/day</p>
+        <button class="select__btn">Rent Now</button>
+        <div class="deals__rating">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          <i class="ri-star-line"></i>
+          <span>(420)</span>
+        </div>
+        <div class="deals__card__grid">
+          <div><i class="ri-group-line"></i> 8 People</div>
+          <div><i class="ri-steering-2-line"></i> Manual</div>
+          <div><i class="ri-speed-up-line"></i> 320km</div>
+          <div><i class="ri-car-line"></i>Van</div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Ford passenger xl -->
+    <div class="range__card">
+      <img src="assets/van-2.jpg" alt="Tata Magic EV" />
+      <div class="range__details">
+        <h4>Ford Passenger XL</h4>
+        <p>₹3,200/day</p>
+        <button class="select__btn">Rent Now</button>
+        <div class="deals__rating">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i><i class="ri-star-line"></i>
+          <i class="ri-star-line"></i>
+          <span>(390)</span>
+        </div>
+        <div class="deals__card__grid">
+          <div><i class="ri-group-line"></i> 10 People</div>
+          <div><i class="ri-steering-2-line"></i> Manual</div>
+          <div><i class="ri-speed-up-line"></i> 200km</div>
+          <div><i class="ri-car-line"></i>Van</div>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

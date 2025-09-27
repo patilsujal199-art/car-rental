@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Rental - Login & Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .toggle-btn {
+      background-color: #6c757d;
+      margin-top: 15px;
+    }
+    .message {
+      text-align: center;
+      color: green;
+      margin-top: 10px;
+    }
+    .form-section {
+      display: none;
+    }
+    .form-section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 id="form-title">Login</h2>
+
+    <!-- Login Form -->
+    <div id="login-form" class="form-section active">
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button>Login</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-form" class="form-section">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button>Create Account</button>
+      <div class="message">Account created successfully! A confirmation has been sent to your email.</div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="toggle-btn" onclick="toggleForm()">Switch to Signup</button>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+    const formTitle = document.getElementById('form-title');
+    const toggleBtn = document.querySelector('.toggle-btn');
+
+    function toggleForm() {
+      loginForm.classList.toggle('active');
+      signupForm.classList.toggle('active');
+
+      if (loginForm.classList.contains('active')) {
+        formTitle.textContent = 'Login';
+        toggleBtn.textContent = 'Switch to Signup';
+      } else {
+        formTitle.textContent = 'Sign Up';
+        toggleBtn.textContent = 'Switch to Login';
+      }
+    }
+  </script>
+</body>
+</html>
